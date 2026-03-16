@@ -10,7 +10,7 @@ function loadPage(page) {
 
 function loadScript(page) {
   const script = document.createElement("script");
-  script.src = `src/js/${page}.js`;
+  script.src = `../src/js/${page}.js`;
   script.defer = true;
 
   script.onerror = () => {
