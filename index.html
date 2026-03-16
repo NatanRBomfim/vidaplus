@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/assets/imgs/logo-plus.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8aa782c44.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/responsive.css">
+
+    <title>Login</title>
+</head>
+
+<body class="body">
+    <div class="centralize-login">
+        
+        <header class="headerLogin">
+            <div class="logo-iconLogin">
+                <img src="src/assets/imgs/logo-vida.png" alt="logo Vida Plus">
+            </div>
+            <h2 class="h3">Bem-vindo de volta!</h2>
+        </header>
+        <main class="main">
+                <form id="formLogin" class="form">
+                    <fieldset>
+                        <legend class="hide">Campo de login</legend>
+                        <div class="input-group" tabindex="0">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="email" id="email" class="input" name="email" placeholder="Digite seu email"
+                                required>
+                        </div>
+                        <div class="input-group" tabindex="0">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" class="input" name="password"
+                                placeholder="Digite sua senha" required>
+                        </div>
+                        <a href="#" class="linksLogin">Esqueceu sua senha?</a>
+
+
+                        <button type="submit" class="btn">Entrar</button>
+
+                        <a href="cadastro.html" class="linksLogin">Não tem uma conta? <span>Cadastra-se</span></a>
+
+                    </fieldset>
+                </form>
+        </main>
+    </div>
+    <footer class="footer footer__loguin">
+        <p>© Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="src/js/app.js" type="module"></script>
+</body>
+
+</html>

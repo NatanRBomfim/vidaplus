@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dados - Paciente</title>
+</head>
+
+<body>
+    <nav class="sidebar lg-show">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item" data-attribute="home-admin"><a href="home-admin.html" class="btn list-menu"><i
+                            class="fa-regular fa-house"></i>Home</a></li>
+                <li class="item" data-attribute="adm-pacientes"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-pacientes')"><i class="fa-solid fa-user-group"></i>
+                        </i>Gerenciar Pacientes</button></li>
+                <li class="item" data-attribute="profissionais"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-profissionais')"><i class="fa-solid fa-user-doctor"></i>Gerenciar
+                        Profissionais</button></li>
+                <li class="item" data-attribute="internacoes"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-internacoes')"><i
+                            class="fa-regular fa-hospital"></i>Internações</button></li>
+                <li class="item" data-attribute="relatorios"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-relatorios')"><i class="fa-regular fa-clipboard"></i>Gerar
+                        Relatório</button></li>
+
+            </ul>
+            <ul>
+                <li><img src="https://randomuser.me/api/portraits/men/7.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Renan R.</p>
+                        <p class="nameTitle">Admin</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+    <main id="app">
+        <div class="centralize">
+            <article class="profile">
+                <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="imagem de uma pessoa"
+                    class="img--radius">
+                 <h1>João Silva</h1> 
+            </article>
+            <nav class="menu-paciente sm-hide">
+                <ul>
+                    <li>Dados Pessoais</li>
+                    <li>Histórico Clinico</li>
+                    <li>Exames</li>
+                    <li>Consultas</li>
+                </ul>
+            </nav>
+
+            <section class="gridContainer">
+                <article class="cardHistory">
+
+                    <h3 class="titleCard">Dados pessoais</h3>
+                    <div class="flex__content">
+                        <ul>
+                            <li>CPF: XXX.XXX.XXX-XX</li>
+                            <li>Nascimento: 01/02/2004 - 21 anos</li>
+                            <li>Tipo Sanguíneo: O+</li>
+                            <li>Sexo: Masculino</li>
+                            <li>Convênio: Unimed</li>
+                            <li>Email: joao@exemplo.com</li>
+                            <li>Telefone: 11 11111-111</li>
+                            <li>Alergias: Dipirona</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="cardHistory">
+                    <h3 class="titleCard">Historico Clinico</h3>
+                    <div class="tableContainer">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Tipo</th>
+                                    <th>Diagnóstico</th>
+                                    <th>Profissional</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>25/02/2021</td>
+                                    <td>Consulta</td>
+                                    <td>Dor de cabeça</td>
+                                    <td>Dr.Julio</td>
+                                    <td>></td>
+                                </tr>
+                                <tr>
+                                    <td>11/01/2022</td>
+                                    <td>Retorno</td>
+                                    <td>Acompanhamento de hipertensão</td>
+                                    <td>Dra.Nicole</td>
+                                    <td>></td>
+                                </tr>
+                                <tr>
+                                    <td>02/08/2022</td>
+                                    <td>Consulta</td>
+                                    <td>Dor de garganta</td>
+                                    <td>Dr.Tulio</td>
+                                    <td>></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+            </section>
+
+            <button class="btn btn-primary btn-start">Baixar Prontuário Completo</button>
+
+            <section class="other__buttons">
+                <div class="btn__links">
+                    <div class="icon__text">
+                        <div class="icon"> <i class="fa-solid fa-flask"></i></div>
+                        <p>Solicitar Exame</p>
+                    </div>
+                    <button class="btn btn-paciente" onclick="navigate(this,'adm-exame')">></button>
+                </div>
+                <div class="btn__links">
+                    <div class="icon__text">
+                        <div class="icon"> <i class="fa-solid fa-file-contract"></i></div>
+                        <p>Emitir Receita</p>
+                    </div>
+                    <button class="btn btn-paciente" onclick="navigate(this,'adm-protuario')">></button>
+                </div>
+                <div class="btn__links">
+                    <div class="icon__text">
+                        <div class="icon"><i class="fa-solid fa-video"></i></div>
+                        <p>Iniciar Teleconsulta</p>
+                    </div>
+                    <button class="btn btn-paciente" onclick="navigate(this,'adm-teleconsulta')">></button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

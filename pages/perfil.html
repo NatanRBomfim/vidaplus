@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <main id="app">
+        <section class="centralize">
+            <nav class="sidebar lg-show">
+                <div class="hub md-hide">
+                    <div class="icon-menu">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <p>Centro de saúde</p>
+                </div>
+                <ul class="list-middle">
+                    <li class="item" data-attribute="home-paciente"><a href="home-paciente.html"
+                            class="btn list-menu"><i class="fa-regular fa-house"></i>Home</a></li>
+                    <li class="item" data-attribute="agendamento"><button class="btn list-menu"
+                            onclick="navigate(this,'agendamentos-paciente')"><i
+                                class="fa-regular fa-calendar"></i>Agenda<span class="badge md-hide">2</span></button>
+                    </li>
+                    <li class="item" data-attribute="telemidicina"><button class="btn list-menu"
+                            onclick="navigate(this,'telemidicina-paciente')"> <i
+                                class="fa-solid fa-video"></i>Teleconsulta</button></li>
+                    <li class="item" data-attribute="telemidicina"><button class="btn list-menu"
+                            onclick="navigate(this,'perfil')"> <i class="fa-solid fa-user"></i></i>Perfil</button></li>
+
+                </ul>
+                <ul>
+                    <li><img src="https://randomuser.me/api/portraits/men/14.jpg" alt="imagem de uma pessoa"
+                            class="img--radius">
+                        <div class="infoPersona">
+                            <p class="name">Nicolas P.</p>
+                            <p class="nameTitle">Paciente</p>
+                        </div>
+                        <a href="index.html" class="exit list-menu"><i
+                                class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <article class="card" style="text-align:center;">
+                <div class="profile"> <img src="https://randomuser.me/api/portraits/men/14.jpg"
+                        alt="imagem de uma pessoa" class="img--radius img--profile"></div>
+                <div class="flex__content">
+                    <h3>Nicolas Pereira</h3>
+                    <p>nicolas@email.com</p>
+
+                    <button class="btn btn-primary">
+                        Editar Perfil
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="card">
+                <h3 class="h3--perfil">📋 Dados Pessoais</h3>
+                <div class="flex__content">
+                    <p class="history-item"><strong>CPF:</strong> 000.000.000-00</p>
+                    <div class="space"></div>
+                    <p class="history-item"><strong>Telefone:</strong> (11) 99999-9999</p>
+                    <div class="space"></div>
+                    <p class="history-item"><strong>Data de Nascimento:</strong> 12/05/1995</p>
+                    <div class="space"></div>
+                    <p class="history-item"><strong>Endereço:</strong> Indaiatuba - SP</p>
+                </div>
+
+            </article>
+
+            <article class="card">
+                <h3 class="h3--perfil">🔐 Segurança</h3>
+                <div class="flex__content">
+                    <a href="#" class="history-item">Alterar Senha</a>
+                    <div class="space"></div>
+                    <a href="#" class="history-item">Autenticação em 2 Fatores</a>
+                    <div class="space"></div>
+                    <a href="#" class="history-item">Dispositivos Conectados</a>
+                </div>
+
+            </article>
+
+            <article class="card">
+                <h3 class="h3--perfil
+                ">🔔 Notificações</h3>
+                <div class="flex__content">
+                    <p class="history-item">Lembretes de consulta</p>
+                    <div class="space"></div>
+                    <p class="history-item">Resultados de exames</p>
+                    <div class="space"></div>
+                    <p class="history-item">Novas mensagens médicas</p>
+                </div>
+
+            </article>
+
+        </section>
+    </main>
+</body>
+
+</html>

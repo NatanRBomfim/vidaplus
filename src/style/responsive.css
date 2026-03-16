@@ -1,0 +1,308 @@
+@media screen and (min-width: 64em) {
+    .centralize-login {
+        margin: 0 15em;
+    }
+
+    .centralize {
+        margin: 0 4em;
+    }
+
+    .quick-actions {
+        flex-direction: row;
+        font-size: 1.25em;
+        gap: var(--space-md);
+    }
+
+    .flex__content {
+        font-size: var(--space-md);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-md);
+    }
+
+    .h3--perfil {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .h2 {
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-menu {
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        height: 0;
+        width: auto;
+        padding: 0;
+        align-items: center;
+    }
+
+    .md-hide {
+        display: none;
+    }
+
+    .hub.md-hide {
+        display: none;
+    }
+
+    .sm-hide {
+        display: block;
+    }
+
+    .header {
+        align-items: center;
+        justify-content: center;
+        padding: .4em 0;
+    }
+
+    .list-middle {
+        gap: .3em;
+        flex-direction: row;
+        margin: 0 1.6em;
+    }
+
+    .list-middle .item {
+        padding: 0;
+    }
+
+    .nav-menu ul:nth-child(3) li {
+        padding: 0;
+        border-top: none;
+        margin-top: initial;
+    }
+
+    .nav-menu ul:nth-child(3) {
+        margin-top: initial;
+        padding-left: 1.2em;
+        border-left: 1px solid rgba(255, 255, 255, 0.121);
+    }
+
+    .list-menu:hover {
+        background-color: rgba(255, 255, 255, 0.06);
+        transform: translateX(0);
+    }
+
+    .list-menu.actived {
+        background-color: rgba(255, 255, 255, 0.192);
+        border-radius: var(--radius);
+    }
+
+    .pacientes .h1 {
+        border-bottom: none;
+        font-size: 2em;
+    }
+
+    .btn-flex {
+        display: flex;
+        gap: .3em;
+        justify-content: center;
+        width: 20%;
+    }
+
+    .status {
+        font-size: var(--space-md);
+    }
+
+    .form fieldset label {
+        font-size: 1.2em;
+    }
+
+    .form fieldset input,
+    .form fieldset select {
+        font-size: 1.var(--space-md);
+    }
+
+    .btn {
+        font-size: var(--space-md);
+    }
+
+    .cardHistory .flex__content {
+        justify-content: stretch;
+    }
+
+    .cardHistory .flex__content ul {
+        width: 100%;
+    }
+
+    .other__buttons .btn__links {
+        justify-content: space-between;
+    }
+
+    .gridContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .gridContainer .btn {
+        width: 50%;
+    }
+
+    .cardAgenda p {
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    .space {
+        border-left: 1px solid rgba(0, 0, 0, 0.141);
+        height: 1.75em;
+
+    }
+
+    .cardAgenda .flex__content {
+        justify-content: space-between;
+    }
+
+    .input-width {
+        width: 35%;
+    }
+
+    .padding-article.flex__content {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+
+    .padding-article .flex__content {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .card .flex__content {
+        flex-direction: row;
+    }
+
+    .cardAgendaPaciente .flex__content {
+        justify-content: flex-end;
+    }
+
+    .card.flex__content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+
+    .card .btn {
+        align-self: flex-end;
+    }
+
+    .mini-dashboard {
+        font-size: 1.2em;
+        gap: 2em;
+    }
+
+    .textUser {
+        font-size: 1.2em;
+    }
+
+    .lg-hide-info {
+        display: revert;
+    }
+
+}
+
+@media screen and (min-width: 90em) {
+
+    .centralize-login {
+        margin: 0 25em;
+    }
+
+    .header {
+        justify-content: space-between;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .header .list-middle i {
+        color: white;
+        font-size: 1.4em;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 11.5%;
+        left: 0;
+        bottom: 0;
+        width: 16%;
+        max-height: 100vh;
+        display: flex;
+        padding: var(--space-md) .5em;
+        flex-direction: column;
+        justify-content: start;
+        background-color: black;
+        z-index: 9999;
+    }
+
+    .sidebar .list-menu:hover:not(.actived, .exit) {
+        background-color: rgba(255, 255, 255, 0.06);
+        transform: translateX(5px);
+    }
+
+    .sidebar .list-middle {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .sidebar .list-middle .item {
+        padding: .5em 0;
+    }
+
+    .list-menu.actived {
+        background-color: var(--color-teal);
+    }
+
+    .appMain {
+        margin-left: 15%;
+    }
+
+    .lg-show {
+        display: flex;
+    }
+
+    .lg-hide-info {
+        display: none;
+    }
+
+    .h1 {
+        margin-top: var(--space-md);
+    }
+
+
+    .mini-dashboard {
+        font-size: 1.3em;
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gridContainer+.btn {
+        margin: auto;
+        width: 50%;
+    }
+
+    .gridContainer .card .flex__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quick-actions {
+        margin-top: var(--space-md);
+        font-size: 1.2em;
+    }
+
+    .h1+.btn,
+    .input-group+.btn {
+        width: 30%;
+        align-self: flex-end;
+        text-align: center;
+    }
+}

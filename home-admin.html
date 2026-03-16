@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/assets/imgs/logo-plus.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8aa782c44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/responsive.css">
+
+    <title>Dashboard - Admin</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-iconCadastro">
+            <img src="src/assets/imgs/logo-vida.png" alt="logo vida plus">
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu"> <i
+                class="fa-solid fa-bars-staggered menu-icon"></i></button>
+        <nav class="nav-menu">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item lg-hide-info" data-attribute="home-admin"><a href="home-admin.html"
+                        class="btn list-menu"><i class="fa-regular fa-house md-hide"></i>Home</a></li>
+                <li class="item lg-hide-info" data-attribute="adm-pacientes"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-pacientes')"><i class="fa-solid fa-user-group md-hide"></i>
+                        </i>Gerenciar Pacientes</button></li>
+                <li class="item lg-hide-info" data-attribute="profissionais"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-profissionais')"><i
+                            class="fa-solid fa-user-doctor md-hide"></i>Gerenciar Profissionais</button></li>
+                <li class="item lg-hide-info" data-attribute="internacoes"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-internacoes')"><i
+                            class="fa-regular fa-hospital md-hide"></i>Internações</button></li>
+                <li class="item lg-hide-info" data-attribute="relatorios"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-relatorios')"><i class="fa-regular fa-clipboard md-hide"></i>Gerar
+                        Relatório</button></li>
+                <li class="item lg-show"><i class="fa-solid fa-bell"></i></li>
+
+            </ul>
+            <ul>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Renan R.</p>
+                        <p class="nameTitle md-hide">Admin</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu lg-hide-info"><i
+                            class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="appMain" id="app">
+
+        <nav class="sidebar lg-show">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item" data-attribute="home-admin"><a href="home-admin.html" class="btn list-menu"><i
+                            class="fa-regular fa-house"></i>Home</a></li>
+                <li class="item" data-attribute="adm-pacientes"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-pacientes')"><i class="fa-solid fa-user-group"></i>
+                        </i>Gerenciar Pacientes</button></li>
+                <li class="item" data-attribute="profissionais"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-profissionais')"><i class="fa-solid fa-user-doctor"></i>Gerenciar
+                        Profissionais</button></li>
+                <li class="item" data-attribute="internacoes"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-internacoes')"><i
+                            class="fa-regular fa-hospital"></i>Internações</button></li>
+                <li class="item" data-attribute="relatorios"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-relatorios')"><i class="fa-regular fa-clipboard"></i>Gerar
+                        Relatório</button></li>
+
+            </ul>
+            <ul>
+                <li><img src="https://randomuser.me/api/portraits/men/7.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Renan R.</p>
+                        <p class="nameTitle">Admin</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="centralize">
+            <h1 class="h1">Painel Administrativo</h1>
+            <p>Resumo geral do sistema</p>
+
+            <div class="quick-actions">
+                <div class="action-box">
+                    <p><span>📅</span></p>
+                    <p><strong>18</strong></p>
+                    <p>Consultas Hoje</p>
+                </div>
+
+                <div class="action-box">
+                    <p><span>💻</span></p>
+                    <p><strong>5</strong></p>
+                    <p>Teleconsultas</p>
+                </div>
+
+                <div class="action-box">
+                    <p><span>👤</span></p>
+                    <p><strong>3</strong></p>
+                    <p>Novos Pacientes</p>
+                </div>
+
+            </div>
+            <div class="card">
+                <h3 class="h3--perfil">🕘 Agenda de Hoje</h3>
+                <div class="flex__content">
+                    <p class="history-item">09:00 - Ana Souza (Cardiologia)</p>
+                    <div class="space"></div>
+                    <p class="history-item">10:30 - João Lima (Dermatologia)</p>
+                    <div class="space"></div>
+                    <p class="history-item">14:00 - Carla Mendes (Clínica Geral)</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="h3--perfil">🔴 Teleconsultas Ativas</h3>
+                <div class="flex__content">
+                    <p class="history-item">Dr. João Silva - Em atendimento</p>
+                    <div class="space"></div>
+                    <p class="history-item">Dra. Mariana Costa - Sala aberta</p>
+                </div>
+            </div>
+
+            <div class="card" style="border-left:5px solid #dc3545;">
+                <h3 class="h3--perfil">⚠️ Alertas</h3>
+                <div class="flex__content">
+                    <p class="history-item">2 pacientes aguardando confirmação</p>
+                    <div class="space"></div>
+                    <p class="history-item">1 exame pendente de envio</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="h3--perfil h3--action">⚙️ Ações Rápidas</h3>
+                <div class="flex__content">
+                    <button class="btn btn-primary">Gerenciar Pacientes</button>
+                    <button class="btn btn-primary">Gerenciar Profissionais</button>
+                    <button class="btn btn-primary">Controlar Internações</button>
+                    <button class="btn btn-primary">Gerar Relatório</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© Todos os direitos reservados.</p>
+    </footer>
+
+   <script src="../src/js/main.js"></script>
+    <script src="../src/js/menu.js"></script>
+    <script src="../src/js/infos.js"></script>
+
+</body>
+
+</html>

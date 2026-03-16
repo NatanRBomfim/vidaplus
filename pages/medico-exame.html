@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/assets/imgs/logo-plus.png">
+   
+    <title>Exame Paciente</title>
+</head>
+
+<body>
+    <main>
+         <nav class="sidebar lg-show">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item" data-attribute="home-medico"><a href="home-medico.html" class="btn list-menu"><i
+                            class="fa-regular fa-house"></i>Home</a></li>
+                <li class="item" data-attribute="medico-pacientes"><button class="btn list-menu"
+                        onclick="navigate(this,'medico-pacientes')"><i class="fa-regular fa-user"></i>Pacientes</button></li>
+                <li class="item" data-attribute="agendamento"><button class="btn list-menu"
+                        onclick="navigate(this,'agendamentos-usuario')"><i
+                            class="fa-regular fa-calendar"></i>Agendamentos <span
+                            class="badge md-hide">4</span></button></li>
+                <li class="item" data-attribute="notificacao"><button class="btn list-menu"><i
+                            class="fa-regular fa-bell"></i>Notificações <span class="badge md-hide">3</span></button>
+                </li>
+                <li class="item" data-attribute="telemidicina"><button class="btn list-menu"
+                        onclick="navigate(this,'telemidicina-medico')"> <i
+                            class="fa-solid fa-video"></i>Telemidicina</button></li>
+            </ul>
+            <ul>
+                <li><img src="https://randomuser.me/api/portraits/men/4.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Dr. Jordan</p>
+                        <p class="nameTitle">Medico</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="centralize">
+            <h3 class="h3 h3--exame">Solicitar Exame</h3>
+            <form action="#" class="form">
+                <fieldset>
+                    <legend class="hide">Solicitar Exame do Paciente</legend>
+                    <article class="icon__text iconsExam">
+                        <i class="fa-solid fa-vial"></i>
+                        <h3 class="h3">Exame</h3>
+                    </article>
+                    <article class="input-group" tabindex="0">
+                        <i class="fa-solid fa-stethoscope"></i>
+
+                        <select name="tipoSang" id="typeBlood" class="select">
+                            <option value="default">Selecione</option>
+                            <option value="sangue">Sangue</option>
+                            <option value="urina">Urina</option>
+                            <option value="raiox">Raio-X</option>
+                            <option value="tomografia">Tomografia</option>
+                            <option value="ressonancia">Ressonância</option>
+                            <option value="ultrassom">Ultrassom</option>
+                        </select>
+                    </article>
+                    <article class="icon__text iconsExam">
+                        <i class="fa-solid fa-book"></i>
+                        <h3 class="h3">Observações</h3>
+                    </article>
+                    <textarea name="message" id="textArea" placeholder="Digite Observações importantes..."></textarea>
+                    <article class="icon__text iconsExam">
+                        <i class="fa-solid fa-square-plus"></i>
+                        <h3 class="h3">Tipo de Urgência</h3>
+                    </article>
+
+                    <article class="flex--radio">
+                        <label class="input--radio">
+                            <input type="radio" name="radio" value="Normal">
+                            <span class="radio"></span>
+                            Normal
+                        </label>
+                        <label class="input--radio">
+                            <input type="radio" name="radio" value="Urgente">
+                            <span class="radio"></span>
+                            Urgente
+                        </label>
+                        <label class="input--radio">
+                            <input type="radio" name="radio" value="Emergência">
+                            <span class="radio"></span>
+                            Emergência
+                        </label>
+                    </article>
+
+                </fieldset>
+
+                <article class="btn__links">
+                    <button class="btn btn--cancel">Cancelar</button>
+                    <button class="btn btn-start btn-primary">Solicitar Exame</button>
+                </article>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="app">
+          <nav class="sidebar lg-show">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item" data-attribute="home-paciente"><a href="home-paciente.html" class="btn list-menu"><i
+                            class="fa-regular fa-house"></i>Home</a></li>
+                            <li class="item" data-attribute="agendamento"><button class="btn list-menu"
+                        onclick="navigate(this,'agendamentos-paciente')"><i
+                            class="fa-regular fa-calendar"></i>Agenda<span class="badge md-hide">2</span></button>
+                </li>
+                <li class="item" data-attribute="telemidicina"><button class="btn list-menu"
+                        onclick="navigate(this,'telemidicina-paciente')"> <i
+                            class="fa-solid fa-video"></i>Teleconsulta</button></li>
+                <li class="item" data-attribute="telemidicina"><button class="btn list-menu"
+                        onclick="navigate(this,'perfil')"> <i class="fa-solid fa-user"></i></i>Perfil</button></li>
+
+            </ul>
+            <ul>
+                <li><img src="https://randomuser.me/api/portraits/men/14.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Nicolas P.</p>
+                        <p class="nameTitle">Paciente</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="centralize">
+
+            <h3 class="h3--exame">Telemedicina</h3>
+            <p>Gerencie suas consultas online</p>
+          
+            <article class="card next-appointment flex__content">
+                <h3>🔔 Consulta Agendada</h3>
+                <p><strong>02 Mar 2026 • 15:00</strong></p>
+                <p>Dr. João Silva • Cardiologia</p>
+
+                <button class="btn btn-primary">Entrar na Sala</button>
+            </article>
+            <article class="card flex__content">
+                <h3>📡 Status do Dispositivo</h3>
+                <div class="flex__content">
+                <p class="history-item">🎤 Microfone: OK</p>
+                <div class="space"></div>
+                <p class="history-item">📷 Câmera: OK</p>
+                 <div class="space"></div>
+                <p class="history-item">🌐 Internet: Estável</p></div>
+               
+
+                <button class="btn btn-start btn-primary">
+                    Testar Equipamentos
+                </button>
+            </article>
+
+            <article class="card flex__content">
+                <h3>ℹ️ Orientações</h3>
+                <p>• Esteja em um local silencioso</p>
+                <p>• Utilize fones de ouvido</p>
+                <p>• Tenha seus exames em mãos</p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

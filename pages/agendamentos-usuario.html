@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agendamento</title>
+</head>
+
+<body>
+    <main id="app">
+        <nav class="sidebar lg-show">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item" data-attribute="home-medico"><a href="home-medico.html" class="btn list-menu"><i
+                            class="fa-regular fa-house"></i>Home</a></li>
+                <li class="item" data-attribute="medico-pacientes"><button class="btn list-menu"
+                        onclick="navigate(this,'medico-pacientes')"><i class="fa-regular fa-user"></i>Pacientes</button>
+                </li>
+                <li class="item" data-attribute="agendamento"><button class="btn list-menu"
+                        onclick="navigate(this,'agendamentos-usuario')"><i
+                            class="fa-regular fa-calendar"></i>Agendamentos <span
+                            class="badge md-hide">4</span></button></li>
+                <li class="item" data-attribute="notificacao"><button class="btn list-menu"><i
+                            class="fa-regular fa-bell"></i>Notificações <span class="badge md-hide">3</span></button>
+                </li>
+                <li class="item" data-attribute="telemidicina"><button class="btn list-menu"
+                        onclick="navigate(this,'telemidicina-medico')"> <i
+                            class="fa-solid fa-video"></i>Telemidicina</button></li>
+            </ul>
+            <ul>
+                <li><img src="https://randomuser.me/api/portraits/men/4.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Dr. Jordan</p>
+                        <p class="nameTitle">Medico</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="centralize">
+            <h1 class="h1">Agendamentos</h1>
+            <article class="padding-article background--agendamento icon__text">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Hoje <span class="time"></span></p>
+            </article>
+            <article class="padding-article icon__text">
+                <i class="fa-solid fa-sliders"></i>
+                <p>Todos os Tipos</p>
+            </article>
+
+            <div class="gridContainer">
+                <article class="padding-article flex__content">
+                    <div class="flex__content">
+                        <p class="padding-article background--agendamento">14:00</p>
+                        <div class="dadosAgenda">
+                            <p>Ana Soares</p>
+                            <p>CPF XXXXXXXX</p>
+                        </div>
+                        <button class="btn btn-primary btn-start">Atender</button>
+                    </div>
+                    <div class="padding-article background--agendamento icon__text div-inline ">
+                        <i class="fa-solid fa-video"></i>
+                        <p>Teleconsulta</p>
+                    </div>
+                </article>
+
+
+                <article class="padding-article flex__content">
+                    <div class="flex__content">
+                        <p class="padding-article background--agendamento">14:30</p>
+                        <div class="dadosAgenda">
+                            <p>Júlio Santos</p>
+                            <p>CPF XXXXXXXX</p>
+                        </div>
+                        <button class="btn btn-primary btn-start">Atender</button>
+                    </div>
+                    <div class="padding-article background--agendamento icon__text div-inline ">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <p>Consulta Presencial</p>
+                    </div>
+                </article>
+
+                <article class="padding-article flex__content">
+                    <div class="flex__content">
+                        <p class="padding-article background--agendamento">15:00</p>
+                        <div class="dadosAgenda">
+                            <p>Matheus Santos</p>
+                            <p>CPF XXXXXXXX</p>
+                        </div>
+                        <button class="btn btn-primary btn-start">Atender</button>
+                    </div>
+                    <div class="padding-article background--agendamento icon__text div-inline ">
+                        <i class="fa-solid fa-video"></i>
+                        <p>Teleconsulta</p>
+                    </div>
+                </article>
+
+                <article class="padding-article flex__content">
+                    <div class="flex__content">
+                        <p class="padding-article background--agendamento">15:30</p>
+                        <div class="dadosAgenda">
+                            <p>Rodrigo Farias</p>
+                            <p>CPF XXXXXXXX</p>
+                        </div>
+                        <button class="btn btn-primary btn-start">Atender</button>
+                    </div>
+                    <div class="padding-article background--agendamento icon__text div-inline ">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <p>Consulta Presencial</p>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/assets/imgs/logo-plus.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8aa782c44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/responsive.css">
+    <title>Home Paciente</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-iconCadastro">
+            <img src="src/assets/imgs/logo-vida.png" alt="logo vida plus">
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu"> <i
+                class="fa-solid fa-bars-staggered menu-icon"></i></button>
+        <nav class="nav-menu">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item lg-hide-info" data-attribute="home-paciente.html"><a href="home-paciente.html"
+                        class="btn list-menu"><i class="fa-regular fa-house"></i>Home</a></li>
+                <li class="item lg-hide-info" data-attribute="agendamento"><button class="btn list-menu"
+                        onclick="navigate(this,'agendamentos-paciente')"><i
+                            class="fa-regular fa-calendar"></i>Agenda<span class="badge md-hide">2</span></button>
+                </li>
+                <li class="item lg-hide-info" data-attribute="telemidicina"><button class="btn list-menu"
+                        onclick="navigate(this,'telemidicina-paciente')"> <i
+                            class="fa-solid fa-video"></i>Teleconsulta</button></li>
+                <li class="item lg-hide-info" data-attribute="telemidicina"><button class="btn list-menu"
+                        onclick="navigate(this,'perfil')"> <i class="fa-solid fa-user"></i></i>Perfil</button></li>
+                <li class="item lg-show"><i class="fa-solid fa-bell"></i></li>
+            </ul>
+            <ul>
+                <li><img src="https://randomuser.me/api/portraits/men/14.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Nicolas P.</p>
+                        <p class="nameTitle md-hide">Paciente</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu lg-hide-info"><i
+                            class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="appMain" id="app">
+
+        <nav class="sidebar lg-show">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item" data-attribute="home-paciente"><a href="home-paciente.html" class="btn list-menu"><i
+                            class="fa-regular fa-house"></i>Home</a></li>
+                <li class="item" data-attribute="agendamento"><button class="btn list-menu"
+                        onclick="navigate(this,'agendamentos-paciente')"><i
+                            class="fa-regular fa-calendar"></i>Agenda<span class="badge md-hide">2</span></button>
+                </li>
+                <li class="item" data-attribute="telemidicina"><button class="btn list-menu"
+                        onclick="navigate(this,'telemidicina-paciente')"> <i
+                            class="fa-solid fa-video"></i>Teleconsulta</button></li>
+                <li class="item" data-attribute="telemidicina"><button class="btn list-menu"
+                        onclick="navigate(this,'perfil')"> <i class="fa-solid fa-user"></i></i>Perfil</button></li>
+
+            </ul>
+            <ul>
+                <li><img src="https://randomuser.me/api/portraits/men/14.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Nicolas P.</p>
+                        <p class="nameTitle">Paciente</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="centralize">
+
+            <article class="textUser">
+                <h2>Olá, Nicolas 👋</h2>
+                <p>Bem-vindo ao seu painel de saúde</p>
+            </article>
+
+
+            <article class="card next-appointment flex__content">
+                <h3 class="h3">📅 Próxima Consulta</h3>
+                <p><strong>02 Mar 2026 • 15:00</strong></p>
+                <p>Dr. João Silva • Cardiologia</p>
+                <button class="btn btn-primary">Entrar na Consulta</button>
+            </article>
+
+            <article class="quick-actions">
+                <div class="action-box">
+                    <p><span>📅</span>Agendar</p>
+                </div>
+                <div class="action-box">
+                    <p><span>📄</span>Exames</p>
+                </div>
+                <div class="action-box">
+                    <p><span>💊</span>Receitas</p>
+                </div>
+            </article>
+
+            <article class="card flex__content">
+                <h3 class="h3">🕘 Últimas Consultas</h3>
+                <p class="history-item">15 Fev 2026 - Clínica Geral</p>
+                <p class="history-item">10 Jan 2026 - Dermatologia</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/menu.js"></script>
+    <script src="../src/js/infos.js"></script>
+
+</body>
+
+</html>

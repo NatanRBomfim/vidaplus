@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/assets/imgs/logo-plus.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/responsive.css">
+
+    <script src="https://kit.fontawesome.com/d8aa782c44.js" crossorigin="anonymous"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-iconCadastro">
+            <img src="src/assets/imgs/logo-vida.png" alt="logo Vida Plus">
+        </div>
+    </header>
+    <main class="main">
+        <section class="centralize-login">
+            <form id="formCadastro" class="form">
+                <fieldset>
+                    <legend class="hide">Campo de cadastro</legend>
+                    <h1 class="h1">Cadastro</h1>
+
+                    <div class="input-group" tabindex="0">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="name" class="input" name="name" placeholder="Digite seu nome completo"
+                            required>
+                    </div>
+                    <div class="input-group" tabindex="0">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" class="input" name="email" placeholder="Digite seu email"
+                            required>
+                    </div>
+                    <div class="input-group" tabindex="0">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" class="input" name="password"
+                            placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="input-group" tabindex="0">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="passwordRpt" class="input" name="passwordRpt"
+                            placeholder="Digite sua senha novamente" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-start btn-primary">Cadastrar</button>
+                    <div class="links-user">
+                        <a href="index.html">Possui uma conta? Acesse já</a>
+                        <a href="#"><i class="fa-regular fa-circle-question"></i>Ajuda</a>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="src/js/app.js" type="module"></script>
+</body>
+
+</html>

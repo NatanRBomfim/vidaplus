@@ -1,0 +1,5 @@
+[
+  { "name": "medico", "email": "medico@teste.com", "password": "1234" },
+  { "name": "paciente", "email": "paciente@teste.com", "password": "1234" },
+  { "name": "admin", "email": "admin@teste.com", "password": "1234" }
+]

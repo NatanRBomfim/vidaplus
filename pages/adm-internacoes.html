@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="app">
+        <nav class="sidebar lg-show">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item" data-attribute="home-admin"><a href="home-admin.html" class="btn list-menu"><i
+                            class="fa-regular fa-house"></i>Home</a></li>
+                <li class="item" data-attribute="adm-pacientes"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-pacientes')"><i class="fa-solid fa-user-group"></i>
+                        </i>Gerenciar Pacientes</button></li>
+                <li class="item" data-attribute="profissionais"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-profissionais')"><i class="fa-solid fa-user-doctor"></i>Gerenciar
+                        Profissionais</button></li>
+                <li class="item" data-attribute="internacoes"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-internacoes')"><i
+                            class="fa-regular fa-hospital"></i>Internações</button></li>
+                <li class="item" data-attribute="relatorios"><button class="btn list-menu"
+                        onclick="navigate(this,'adm-relatorios')"><i class="fa-regular fa-clipboard"></i>Gerar
+                        Relatório</button></li>
+
+            </ul>
+            <ul>
+                <li><img src="https://randomuser.me/api/portraits/men/7.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Renan R.</p>
+                        <p class="nameTitle">Admin</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="centralize">
+            <h1 class="h1">Internações</h1>
+
+            <button class="btn btn-primary btn-start"><i class="fa-solid fa-plus"></i> Nova internação</button>
+
+            <div class="gridContainer">
+                <article class="card">
+                    <h3 class="h3--perfil">Maria Oliveira</h3>
+                    <div class="flex__content">
+                        <p class="info">📅 Entrada: 10 Mar 2026</p>
+                        <p class="info">🩺 Médico: Dr. João Silva</p>
+                        <p class="info">🏥 Quarto: 204</p>
+                        <span class="status active">Internado</span>
+
+                    </div>
+                    <div class="quick-actions">
+                        <button class="btn btn-primary btn-start">Ver Detalhes</button>
+                        <button class="btn btn-primary btn-danger">Dar Alta</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3 class="h3--perfil">Carlos Mendes</h3>
+                    <div class="flex__content">
+                        <p class="info">📅 Entrada: 08 Mar 2026</p>
+                        <p class="info">🩺 Médico: Dra. Ana Souza</p>
+                        <p class="info">🏥 Quarto: 112</p>
+
+                        <span class="status active warning">Observação</span>
+                    </div>
+
+                    <div class="quick-actions">
+                        <button class="btn btn-primary btn-start">Ver Detalhes</button>
+                        <button class="btn btn-primary btn-danger">Dar Alta</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/assets/imgs/logo-plus.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8aa782c44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/responsive.css">
+
+    <title>Dashboard - Medico</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-iconCadastro">
+            <img src="src/assets/imgs/logo-vida.png" alt="logo vida plus">
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu"> <i
+                class="fa-solid fa-bars-staggered menu-icon"></i></button>
+        <nav class="nav-menu">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item lg-hide-info" data-attribute="home-medico"><a href="home-medico.html"
+                        class="btn list-menu"><i class="fa-regular fa-house"></i>Home</a></li>
+                <li class="item lg-hide-info" data-attribute="medico-pacientes"><button class="btn list-menu"
+                        onclick="navigate(this,'medico-pacientes')"><i class="fa-regular fa-user"></i>Pacientes</button>
+                </li>
+                <li class="item lg-hide-info" data-attribute="agendamento"><button class="btn list-menu"
+                        onclick="navigate(this,'agendamentos-usuario')"><i
+                            class="fa-regular fa-calendar"></i>Agendamentos <span
+                            class="badge md-hide">4</span></button></li>
+                <li class="item lg-hide-info" data-attribute="notificacao"><button class="btn list-menu"><i
+                            class="fa-regular fa-bell"></i>Notificações <span class="badge md-hide">3</span></button>
+                </li>
+                <li class="item lg-hide-info" data-attribute="telemidicina"><button class="btn list-menu"
+                        onclick="navigate(this,'telemidicina-medico')"> <i
+                            class="fa-solid fa-video"></i>Telemidicina</button></li>
+                <li class="item lg-show"><i class="fa-solid fa-bell"></i></li>
+            </ul>
+            <ul>
+                <li><img src="https://randomuser.me/api/portraits/men/4.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Dr. Jordan</p>
+                        <p class="nameTitle md-hide">Medico</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu lg-hide-info"><i
+                            class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="appMain" id="app">
+
+        <nav class="sidebar lg-show">
+            <div class="hub md-hide">
+                <div class="icon-menu">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <p>Centro de saúde</p>
+            </div>
+            <ul class="list-middle">
+                <li class="item" data-attribute="home-medico"><a href="home-medico.html" class="btn list-menu"><i
+                            class="fa-regular fa-house"></i>Home</a></li>
+                <li class="item" data-attribute="medico-pacientes"><button class="btn list-menu"
+                        onclick="navigate(this,'medico-pacientes')"><i class="fa-regular fa-user"></i>Pacientes</button>
+                </li>
+                <li class="item" data-attribute="agendamento"><button class="btn list-menu"
+                        onclick="navigate(this,'agendamentos-usuario')"><i
+                            class="fa-regular fa-calendar"></i>Agendamentos <span
+                            class="badge md-hide">4</span></button></li>
+                <li class="item" data-attribute="notificacao"><button class="btn list-menu"><i
+                            class="fa-regular fa-bell"></i>Notificações <span class="badge md-hide">3</span></button>
+                </li>
+                <li class="item" data-attribute="telemidicina"><button class="btn list-menu"
+                        onclick="navigate(this,'telemidicina-medico')"> <i
+                            class="fa-solid fa-video"></i>Telemidicina</button></li>
+            </ul>
+            <ul>
+                <li><img src="https://randomuser.me/api/portraits/men/4.jpg" alt="imagem de uma pessoa"
+                        class="img--radius">
+                    <div class="infoPersona">
+                        <p class="name">Dr. Jordan</p>
+                        <p class="nameTitle">Medico</p>
+                    </div>
+                    <a href="index.html" class="exit list-menu"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="centralize">
+            <article class="profile">
+                <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="imagem de uma pessoa"
+                    class="img--radius img--profile">
+                <i class="fa-regular fa-pen-to-square"></i>
+            </article>
+            <article class="welcome">
+                <p class="nameUser">Bem-vindo<span class="user"></span></p>
+                <p class="titleLogo">Clinica VidaPlus</p>
+            </article>
+            <article class="cardAgenda">
+                <h2 class="h2">Agenda de Hoje</h2>
+                <div class="flex__content">
+                    <p class="dataToday"></p>
+                    <div class="space"></div>
+                    <p>Você tem <span class="number">4</span> consultas agendadas</p>
+                    <div class="space"></div>
+                    <p>🕑 Próxima: 14h:00 - João Silva</p>
+                    <div class="space"></div>
+                    <p class="verAgenda"> Ver agenda completa -></p>
+                </div>
+
+            </article>
+
+            <article class="links-btn">
+                <button class="btn btn-primary btn-start">▶ Iniciar Atendimento</button>
+            </article>
+
+            <article class="mini-dashboard">
+
+                <div class="mini-card consultas">
+                    <span class="icon">👨‍⚕️</span>
+                    <strong id="qtdConsultas">8</strong>
+                    <p>Consultas</p>
+                </div>
+
+                <div class="mini-card exames">
+                    <span class="icon">🧪</span>
+                    <strong id="qtdExames">3</strong>
+                    <p>Exames</p>
+                </div>
+
+                <div class="mini-card alertas">
+                    <span class="icon">🔔</span>
+                    <strong id="qtdAlertas">5</strong>
+                    <p>Alertas</p>
+                </div>
+
+            </article>
+
+
+            <article class="links-btn">
+                <button class="btn  btn-primary">Ver Alertas</button>
+            </article>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p>© Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/menu.js"></script>
+    <script src="../src/js/infos.js"></script>
+
+
+
+</body>
+
+</html>
