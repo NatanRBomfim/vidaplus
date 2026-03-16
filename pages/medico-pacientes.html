@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
     <title>Pacientes</title>
 </head>
 
 <body>
 
     <main id="app">
-           <nav class="sidebar lg-show">
+        <nav class="sidebar lg-show">
             <div class="hub md-hide">
                 <div class="icon-menu">
                     <i class="fa-solid fa-heart-pulse"></i>
@@ -19,10 +19,11 @@
                 <p>Centro de saúde</p>
             </div>
             <ul class="list-middle">
-              <li class="item" data-attribute="home-medico"><a href="home-medico.html"
-                        class="btn list-menu"><i class="fa-regular fa-house"></i>Home</a></li>
-                  <li class="item" data-attribute="medico-pacientes"><button class="btn list-menu"
-                        onclick="navigate(this,'medico-pacientes')"><i class="fa-regular fa-user"></i>Pacientes</button></li>
+                <li class="item" data-attribute="home-medico"><a href="home-medico.html" class="btn list-menu"><i
+                            class="fa-regular fa-house"></i>Home</a></li>
+                <li class="item" data-attribute="medico-pacientes"><button class="btn list-menu"
+                        onclick="navigate(this,'medico-pacientes')"><i class="fa-regular fa-user"></i>Pacientes</button>
+                </li>
                 <li class="item" data-attribute="agendamento"><button class="btn list-menu"
                         onclick="navigate(this,'agendamentos-usuario')"><i
                             class="fa-regular fa-calendar"></i>Agendamentos <span
@@ -41,15 +42,15 @@
                         <p class="name">Dr. Jordan</p>
                         <p class="nameTitle">Medico</p>
                     </div>
-                    <a href="index.html" class="exit list-menu"><i
-                            class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    <a href="index.html" class="exit list-menu"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
                 </li>
             </ul>
         </nav>
         <section class="centralize">
             <div class="pacientes">
                 <h1 class="h1">Pacientes</h1>
-                <button class="btn btn-primary btn-start btn-flex" onclick="navigate(this,'medico-cadastro-paciente')"><i class="fa-solid fa-plus sm-hide"></i> Novo
+                <button class="btn btn-primary btn-start btn-flex"
+                    onclick="navigate(this,'medico-cadastro-paciente')"><i class="fa-solid fa-plus sm-hide"></i> Novo
                     Paciente</button>
             </div>
             <div class="pacientes">
@@ -68,18 +69,18 @@
                             <th>Nome</th>
                             <th>Email</th>
                             <th>Idade</th>
-                            <th>Ultima Consulta</th>                          
+                            <th>Ultima Consulta</th>
                         </tr>
                     </thead>
                     <tbody>
-                           
+
                     </tbody>
                 </table>
             </div>
             <p class="limite">Exibindo 1 de <span></span> pacientes</p>
         </section>
     </main>
-
+    <script src="src/js/medico-pacientes.js"></script>
 </body>
 
 </html>
